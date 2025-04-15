@@ -1,0 +1,237 @@
+
+body {
+    font-family: "Red Hat Display", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 12px;
+    font-weight: 400;
+    font-style: normal;
+    width: 348px;
+  }
+  
+  .header {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+  }
+  
+  .logo {
+    width: 26px;
+    height: 26px;
+    margin-right: 8px;
+  }
+  
+  
+  #notes-container {
+    margin-top: 28px;
+  }
+  .note-card {
+    background-color: #ffffff;
+    border: 1px solid #000;
+    border-radius: 8px;
+    cursor: pointer;
+    padding: 14px;
+    margin-bottom: 8px;
+    grid-column-gap: 4px;
+    grid-row-gap: 4px;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    display: flex;
+    transition: all .2s;
+
+  }
+  .note-title{
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .note-category-title{
+    opacity: 50%;
+    font-weight: 500;
+  }
+  
+  button {
+    font-family: "Red Hat Display", sans-serif;
+    background-color: black;
+    color: white;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    width: 100%;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  
+  .devider{
+    margin-top: 10px;
+    margin-bottom: 0px;
+    width: 100%;
+    height: 1px;
+    background-color: #6F6F6F;
+    opacity: 25%;
+  }
+  .content-wrapper{
+    font-family: "Red Hat Display", sans-serif;
+  padding: 12px 24px 19px 24px;
+  flex-flow: column;
+  justify-content: space-between;
+  align-items: stretch;
+  display: flex;
+  }
+
+  .new-note-screen{
+    padding: 12px 24px 19px 24px;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: stretch;
+
+  }
+
+  #category{
+    font-family: "Red Hat Display", sans-serif;
+    font-size: 14px;
+    border-color: #6F6F6F;
+    padding: 14px 0px 14px 0px;
+    border-top: #00000000;
+    border-left: #00000000;
+    border-right: #00000000;
+    cursor: pointer;
+  }
+  #title{
+    font-family: "Red Hat Display", sans-serif;
+    border-color: #6F6F6F;
+    border-width: 1px;
+    padding: 14px 0px 14px 0px;
+    margin-bottom: 14px;
+    border-top: #00000000;
+    border-left: #00000000;
+    border-right: #00000000;
+  }
+  #website{
+    font-family: "Red Hat Display", sans-serif;
+    border-color: #6F6F6F;
+    border-width: 1px;
+    padding: 14px 0px 14px 0px;
+    margin-bottom: 14px;
+    border-top: #00000000;
+    border-left: #00000000;
+    border-right: #00000000;
+  }
+  #note{
+    font-family: "Red Hat Display", sans-serif;
+    height: 240px;
+    border-color: #6F6F6F;
+    border-width: 1px;
+    padding: 14px 0px 14px 0px;
+    margin-bottom: 14px;
+    border-top: #00000000;
+    border-left: #00000000;
+    border-right: #00000000;
+  }
+  #summarized-text{
+    font-family: "Red Hat Display", sans-serif;
+    height: 240px;
+    border-color: #6F6F6F;
+    border-width: 1px;
+    padding: 14px 0px 14px 0px;
+    margin-bottom: 14px;
+    border-top: #00000000;
+    border-left: #00000000;
+    border-right: #00000000;
+  }
+
+  .buttons-wrapper{
+    grid-column-gap: 8px;
+    grid-row-gap: 8px;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: stretch;
+    display: flex;
+  }
+
+  .grey-text{
+    font-size: 14px;
+    color: #6f6f6fbf;
+    font-family: "Red Hat Display", sans-serif;
+  }
+
+  .category-wrapper {
+    border: 1px solid black;
+    margin-bottom: 10px;
+    border-radius: 8px;
+  }
+  
+  .category-header {
+    display: flex;
+    align-items: stretch;
+    cursor: pointer;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: transparent;
+    border-radius: 8px;
+  }
+
+  .notes-list {
+    max-height: 0;
+    overflow: hidden;
+  transition: max-height 0.4s ease;
+
+  }
+  .note-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* margin: 5px 0; */
+    size: 18px;
+    border: 1px 0px 0px 0px solid #000;
+    border-radius: 8px;
+    padding: 14px;
+  }
+  .edit-note-btn{
+    max-width: 50px;
+    background-color: transparent;
+    color: black;
+    size: 18px;
+    padding: 4px;
+    margin: 0px;
+  }
+  .category-title-text {
+    font-weight: 600;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 14px;
+    font-size: 14px;
+    color: #333; /* or any color you want */
+    letter-spacing: 0.5px;
+  }
+
+  .note-title-text {
+    font-size: 14px;
+    font-weight: 500;
+    color: #222;
+    display: inline-block;
+  }
+  
+  .category-color-block {
+    width: 12px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    flex-shrink: 0;
+  }
+  .category-block {
+    display: flex;
+    width: 100%;
+    border-radius: 6px;
+    overflow: hidden;
+  }
+  .notes-list.expanded {
+    max-height: 1000px;
+  }
+  .category-inner-wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  .color-bar {
+    width: 12px;
+    background-color: #ccc;
+  }
