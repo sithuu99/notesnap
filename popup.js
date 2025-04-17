@@ -191,13 +191,15 @@ function summarizeNoteText() {
 }
 
 async function callOpenAISummarize(text) {
-  const response = await fetch('https://notesnap-backend.onrender.com/summarize', {
+  const response = await fetch('https://notesnap-8vo8q.ondigitalocean.app/summarize', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ text })
   });
 
   const data = await response.json();
+  console.log("🧪 Response from server:", data);
+
   return data.summary.trim();
 }
 
