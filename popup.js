@@ -191,7 +191,7 @@ function summarizeNoteText() {
 }
 
 async function callOpenAISummarize(text) {
-  const response = await fetch('https://notesnap-fi9fu.ondigitalocean.app/', {
+  const response = await fetch('https://notesnap-fi9fu.ondigitalocean.app/summarize', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ text })
