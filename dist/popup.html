@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>NoteSnap</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="popup.css">
+  <script src="lib/jspdf.umd.min.js"></script>
+</head>
+
+<body>
+  <div id="main-screen">
+    <div class="content-wrapper">
+      <div class="header">
+        <img src="icons/icon.png" alt="NoteSnap Logo" class="logo">
+        <p><b>NoteSnap</b></p>
+      </div>
+      <div class="devider"></div>
+      <div id="notes-container"></div>
+      <button id="new-note">+ New Note</button>
+    </div>
+  </div>
+
+  <div id="new-note-screen">
+    <div class="content-wrapper">
+      <div class="header">
+        <img src="icons/icon.png" alt="NoteSnap Logo" class="logo">
+        <p><b>NoteSnap</b></p>
+      </div>
+      <div class="devider"></div>
+      <p class="grey-text">Category*</p>
+      <select id="category"></select>
+      <div class="buttons-wrapper">
+        <button id="add-category-btn" type="button">Add Category</button>
+        <button id="delete-category-btn" type="button" class="button-outline">Delete Category</button>
+      </div>
+      <br>
+      <p class="grey-text">Title*</p>
+      <input type="text" id="title" placeholder="Type here..." />
+      <p class="grey-text">Website*</p>
+      <input type="url" id="website" placeholder="www.example.com/" />
+      <p class="grey-text">Note*</p>
+      <textarea id="note" placeholder="Type here..." style="min-height: 200px;"></textarea>
+      <button id="summarize-btn">Click to summerize</button>
+      <br>
+      <p class="grey-text">Summarized Text*</p>
+      <textarea id="summarized-text" style="min-height: 200px;" placeholder= "Summarized text will be generated here."
+        readonly></textarea>
+      <div class="buttons-wrapper">
+        <button id="save-note">Save</button>
+        <button id="delete-note" type="button" class="button-outline">Delete Note</button>
+      </div>
+      <button id="export-pdf-btn" type="button" class="button-outline">Export as PDF</button>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+
+</html>
